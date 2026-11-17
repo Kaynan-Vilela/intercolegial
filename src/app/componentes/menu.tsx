@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function Menu({children}:LayoutProps<'/'>){
+export function Menu({children}:any){
     return(
      <nav>
       <div className="bg-padrao"></div>
