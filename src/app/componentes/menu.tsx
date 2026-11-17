@@ -3,7 +3,7 @@ import Link from "next/link";
 export function Menu({children}:any){
     return(
      <nav>
-      <div className="bg-padrao"></div>
+
         <span className="saudacao">{children}</span>
 
         <br />

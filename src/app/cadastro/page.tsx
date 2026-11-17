@@ -2,12 +2,16 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Head from "next/head";
 import { Menu } from "../componentes/menu";
+import { Cabecalho } from "../componentes/cabecalho";
 
 export default function Cadastro() {
   return (
     <main>
 
-      <Menu>GAME ON!</Menu>
+      <Cabecalho>
+        <Menu>CHOOSE YOUR WEAPON</Menu>
+      </Cabecalho>
+      
       <section className="container">
         <form action="" className="lado_a_lado">
 

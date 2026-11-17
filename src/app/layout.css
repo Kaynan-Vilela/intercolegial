@@ -34,15 +34,13 @@ nav{
     line-height: 1;
     width: 300px;
     height: fit-content;
-    margin-top: 10%;
-    background-image: url("/imagens/padrao.png");
-    background-repeat: repeat;
-    background-size: 50px;
+    margin-top: 50%;
 }
 
 nav a, nav span{
+    width: fit-content;
     background-color: rgb(36, 39, 38);
-    padding: 0.2em;
+    padding: 0.2em 0.35em 0.3em 0.2em;
     margin-bottom: 0.3em;
     border: rgb(102, 236, 192) solid 1px;
 }
@@ -53,18 +51,16 @@ main{
     flex-direction: row;
 }
 
-
-.bg-padrao{
+.cabecalho{
     display: flex;
     flex-direction: column;
     line-height: 1;
-    width: 300px;
-    height: fit-content;
-    margin-top: 10%;
-    background-image: url("/imagens/padrao.png");
+    width: fit-content;
+    height: 100vh;
+    padding: 1em;
+    background-image: url("/imagens/padrao 3.png");
     background-repeat: repeat;
-    background-size: 50px;
-    transform: rotate(30deg);
+    background-size: 200px;
 }
 
 
@@ -75,8 +71,8 @@ main{
 
 
 .container{
-    position: relative;
     float: left;
+    padding: 3em;
 }
 
 
@@ -98,7 +94,6 @@ main{
 
 
 .corpo{
-    padding: 1em;
     z-index: 3;
 }
 
@@ -109,7 +104,7 @@ main{
     max-height: fit-content;
     font-size: 12pt;
     line-height: 1.5em;
-    margin: 20px;
+    margin-right: 20px;
     padding: 1em;
     background-color: rgb(206, 40, 62);
     border-radius: 1em;
@@ -167,11 +162,6 @@ input[type=submit]{
 .botao_foco:hover{
     background-color: rgb(65, 63, 150);
     color: rgb(238, 238, 238);
-    padding: 0.2em 0.7em 0.3em 0.5em;
-    width: fit-content;
-    border-radius: 50px;
-    font-size: 20pt;
-    font-style: italic;
 }
 
 
@@ -179,11 +169,13 @@ input[type=submit]{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -5;
 }
 
 .gaveta-acesso{
-    top: 1em;
-    right: 1em;
+    top: 2em;
+    right: 2em;
     width: fit-content;
+    height: fit-content;
     position: absolute;
 }
