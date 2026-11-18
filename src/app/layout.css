@@ -46,6 +46,11 @@ nav a, nav span{
 }
 
 
+nav a::after{
+    font-size: 24pt;
+}
+
+
 main{
     display: flex;
     flex-direction: row;
