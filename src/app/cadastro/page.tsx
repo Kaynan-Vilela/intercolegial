@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Head from "next/head";
 import { Menu } from "../componentes/menu";
 import { Cabecalho } from "../componentes/cabecalho";
+import { Corpo } from "../componentes/corpo";
 
 export default function Cadastro() {
   return (
@@ -12,7 +13,8 @@ export default function Cadastro() {
         <Menu>CHOOSE YOUR WEAPON</Menu>
       </Cabecalho>
       
-      <section className="container">
+
+      <Corpo>
         <form action="" className="lado_a_lado">
 
           <div className="card ativo">
@@ -58,7 +60,7 @@ export default function Cadastro() {
         </div>
 
       </form>
-      </section>
+      </Corpo>
     </main>
   );
 }

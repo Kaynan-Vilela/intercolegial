@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Menu } from "../componentes/menu";
 import { Cabecalho } from "../componentes/cabecalho";
+import { Corpo } from "../componentes/corpo";
 
 export default function Suporte(){
     return(
@@ -9,7 +10,7 @@ export default function Suporte(){
             <Menu>SUPORTE </Menu>
         </Cabecalho>
 
-        <section>Teste</section>
+        <Corpo>Teste</Corpo>
      </main>
     )
 }

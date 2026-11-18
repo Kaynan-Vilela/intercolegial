@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Head from "next/head";
 import Link from "next/link";
 import { Menu } from "./componentes/menu";
+import { Corpo } from "./componentes/corpo";
 
 export default function Home() {
   return (
@@ -16,9 +17,10 @@ export default function Home() {
             <div className="gaveta-acesso">
               <Link href='/cadastro' className="botao_foco a_frente">FILIE-SE</Link>
             </div>
-          <section className="container">
+          
+          <Corpo>
             Aqui vai a tabela de jogos
-          </section>
+          </Corpo>
             <video src="https://www.pexels.com/pt-br/download/video/7849757/" className="video-bg" autoPlay muted loop></video>
       </main>
     </>
