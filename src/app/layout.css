@@ -1,3 +1,11 @@
+/* animações */
+@keyframes animacao-menu {
+  from {margin-left: 0em;}
+  to {margin-left: 0.5em;}
+}
+
+
+/* globals */
 @media (max-width: 300px) {
   .video-bg{
     height: 100px;
@@ -35,21 +43,45 @@ nav{
     width: 300px;
     height: fit-content;
     margin-top: 50%;
+    background-color: rgb(36, 39, 38);
+    border: rgb(102, 236, 192) solid 1px;
 }
 
-nav a, nav span{
+nav a{
     width: fit-content;
-    background-color: rgb(36, 39, 38);
     padding: 0.2em 0.35em 0.3em 0.2em;
-    margin-bottom: 0.3em;
-    border: rgb(102, 236, 192) solid 1px;
+    font-size: 24pt;
+    margin-left: 0em;
+    --_space: ;
+    background-image: linear-gradient(90deg var(--_space),#ff3b7f 38%,#ffaa17 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+nav a:hover{
+    animation-name: animacao-menu;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+nav a:left{
+    animation-direction: reverse;
 }
 
 
 nav a::after{
-    font-size: 24pt;
+    background-color: rgb(102, 236, 192);
 }
 
+
+nav span{
+    padding: 0.5em;
+    color: rgb(230, 230, 230);
+}
 
 main{
     display: flex;
@@ -65,19 +97,34 @@ main{
     padding: 1em;
     background-image: url("/imagens/padrao 3.png");
     background-repeat: repeat;
-    background-size: 200px;
+    background-size: 400px;
 }
 
+
+.titulo-pagina{
+    font-size: 36pt;
+    margin: 0.5em;
+}
+
+
+.cabecalho-pagina{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container{
+    width: 100%;
+    padding: 0.5em;
+    font-size: 24pt;
+}
 
 .lado_a_lado{
     display: flex;
     flex-direction: row;
-}
-
-
-.container{
-    float: left;
-    padding: 3em;
 }
 
 
@@ -99,7 +146,14 @@ main{
 
 
 .corpo{
+    width: 100vw;
+    float: left;
+    margin: 1em;
     z-index: 3;
+    color: rgb(230, 230, 230);
+    background-color: rgb(20, 11, 44);
+    border: solid 1px rgb(206, 40, 62);
+    font-size: 18pt;
 }
 
 .card{
@@ -159,9 +213,9 @@ input[type=submit]{
     color: rgb(44, 44, 44);
     padding: 0.2em 0.7em 0.3em 0.5em;
     width: fit-content;
-    border-radius: 50px;
     font-size: 20pt;
     font-style: italic;
+    border: solid 1px rgb(20, 11, 44);
 }
 
 .botao_foco:hover{
@@ -177,10 +231,22 @@ input[type=submit]{
     z-index: -5;
 }
 
-.gaveta-acesso{
+.gaveta{
+    float: right;
     top: 2em;
     right: 2em;
     width: fit-content;
     height: fit-content;
     position: absolute;
+}
+
+
+
+.bg-overlay{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,rgba(2, 49, 46, 0.9) 31%, rgba(10, 121, 115, 0.83) 69%, rgba(9, 233, 214, 0) 100%);;
+    opacity: 1;
+    position: fixed;
+    z-index: -3;
 }

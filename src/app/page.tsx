@@ -4,6 +4,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { Menu } from "./componentes/menu";
 import { Corpo } from "./componentes/corpo";
+import { Gaveta } from "./componentes/acesso";
+import { BotaoNav } from "./componentes/botao-navegacao";
 
 export default function Home() {
   return (
@@ -12,15 +14,15 @@ export default function Home() {
           <div className="cabecalho">
             <Menu>CHOOSE YOUR WEAPON</Menu>
           </div>
-
-
-            <div className="gaveta-acesso">
-              <Link href='/cadastro' className="botao_foco a_frente">FILIE-SE</Link>
-            </div>
           
-          <Corpo>
+          <Corpo titulo="TABELA">
+            <Gaveta>
+              <Link href='/cadastro' className="botao_foco a_frente">ACESSO</Link>
+            </Gaveta>
             Aqui vai a tabela de jogos
           </Corpo>
+          
+          <div className="bg-overlay"></div>
             <video src="https://www.pexels.com/pt-br/download/video/7849757/" className="video-bg" autoPlay muted loop></video>
       </main>
     </>

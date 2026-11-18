@@ -14,7 +14,7 @@ export default function Cadastro() {
       </Cabecalho>
       
 
-      <Corpo>
+      <Corpo titulo="LOGIN">
         <form action="" className="lado_a_lado">
 
           <div className="card ativo">
