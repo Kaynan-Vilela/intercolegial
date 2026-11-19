@@ -12,9 +12,6 @@ export default function Noticias(){
         </Cabecalho>
         
         <Corpo titulo="NOVIDADES">
-            <Gaveta>
-              <Link href='/cadastro' className="botao_foco a_frente">ACESSO</Link>
-            </Gaveta>
             Teste
         </Corpo>
      </main>

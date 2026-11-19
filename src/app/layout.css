@@ -113,7 +113,8 @@ main{
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .container{
@@ -231,13 +232,14 @@ input[type=submit]{
     z-index: -5;
 }
 
+.breadcrumb{
+    margin: 1em;
+}
+
 .gaveta{
-    float: right;
-    top: 2em;
-    right: 2em;
+    margin: 1em;
     width: fit-content;
     height: fit-content;
-    position: absolute;
 }
 
 

@@ -12,9 +12,7 @@ export default function Suporte(){
         </Cabecalho>
 
         <Corpo titulo="SUPORTE">
-            <Gaveta>
-              <Link href='/cadastro' className="botao_foco a_frente">ACESSO</Link>
-            </Gaveta>
+            Aqui vai a assistência do jogador
         </Corpo>
      </main>
     )

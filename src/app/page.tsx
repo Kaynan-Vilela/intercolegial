@@ -16,9 +16,6 @@ export default function Home() {
           </div>
           
           <Corpo titulo="TABELA">
-            <Gaveta>
-              <Link href='/cadastro' className="botao_foco a_frente">ACESSO</Link>
-            </Gaveta>
             Aqui vai a tabela de jogos
           </Corpo>
           
