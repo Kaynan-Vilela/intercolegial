@@ -12,11 +12,11 @@ export function Menu({children}:any){
      <nav>
         <span className="saudacao">{children}</span>
 
-        <br />
-        <BotaoNav destino="/">INÍCIO</BotaoNav>
-        <BotaoNav destino="/noticias">ACOMPANHE</BotaoNav>
-        <BotaoNav destino="/suporte">AJUDA</BotaoNav>
-        <br />
+        <div className="opcoes">
+          <BotaoNav destino="/">INÍCIO</BotaoNav>
+          <BotaoNav destino="/noticias">ACOMPANHE</BotaoNav>
+          <BotaoNav destino="/suporte">AJUDA</BotaoNav>
+        </div>
       </nav>
     )
 }

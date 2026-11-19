@@ -1,7 +1,7 @@
 /* animações */
 @keyframes animacao-menu {
   from {margin-left: 0em;}
-  to {margin-left: 0.5em;}
+  to {margin-left: 0.3em;}
 }
 
 
@@ -41,29 +41,25 @@ nav{
     flex-direction: column;
     line-height: 1;
     width: 300px;
-    height: fit-content;
+    min-height: 400px;
     margin-top: 50%;
     background-color: rgb(36, 39, 38);
     border: rgb(102, 236, 192) solid 1px;
 }
+
 
 nav a{
     width: fit-content;
     padding: 0.2em 0.35em 0.3em 0.2em;
     font-size: 24pt;
     margin-left: 0em;
-    --_space: ;
-    background-image: linear-gradient(90deg var(--_space),#ff3b7f 38%,#ffaa17 100%);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(230, 230, 230);
 }
 
 
 nav a:hover{
     animation-name: animacao-menu;
-    animation-duration: 0.1s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
     animation-direction: normal;
 }
@@ -81,6 +77,14 @@ nav a::after{
 nav span{
     padding: 0.5em;
     color: rgb(230, 230, 230);
+}
+
+nav .opcoes{
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    position: relative;
+    bottom: 0;
 }
 
 main{
@@ -136,8 +140,15 @@ main{
 
 
 .saudacao{
-    font-size: 36pt;
+    font-size: 42pt;
+    height: 200px;
     font-style: italic;
+    --_space: ;
+    background-image: linear-gradient(90deg var(--_space),#ff3b7f 38%,#ffaa17 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
